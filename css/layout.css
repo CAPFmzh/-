@@ -64,8 +64,8 @@ body{
 }
 .swiper-slide>.phone{
 	width: 100%;
-	height: 5.84rem;
-	bottom: 0.8rem;
+    height: 44.4%;
+    bottom: 0.8rem;
 }
 
 /*.swiper-container {
