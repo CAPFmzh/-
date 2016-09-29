@@ -55,12 +55,12 @@ body{
 .swiper-slide>.num{
 	width: 0.65rem;
 	height: 1.01rem;
-	top: 3.03rem;
+	top: 2.9rem;
 }
 .swiper-slide>.text{
 	width: 4.84rem;
 	height: 1rem;
-	top: 4.04rem;
+	top: 3.9rem;
 	z-index:33;
 }
 .swiper-slide>.phone{
