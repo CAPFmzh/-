@@ -43,37 +43,6 @@ body{
 	width: 100%;
 	height: 100%;
 }
-.swiper-slide>.bg{
-	width: 100%;
-	height: 3.32rem;
-	top: 0;
-}
-.swiper-slide>.logo{
-	width: 3.8rem;
-	height: 1.2rem;
-	top: 0.65rem;
-}
-.swiper-slide>.num{
-	width: 0.65rem;
-	height: 1.01rem;
-	top: 3.03rem;
-}
-.swiper-slide>.text{
-	width: 4.84rem;
-	height: 1rem;
-	top: 4.04rem;
-}
-.swiper-slide>.phone{
-	width: 100%;
-	height: 5.84rem;
-	bottom: 1.2rem;
-}
-
-/*.swiper-container {
-	width: 600px;
-	height: 300px;
-}*/
-
 .swiper-container{
 	width: 100%;
 }
@@ -84,7 +53,7 @@ body{
 	width: 100%;
 }
 
-@media screen and (max-height: 568px) {
+
 	.swiper-slide>.bg{
 		width: 100%;
 		height: 3.32rem;
@@ -110,14 +79,40 @@ body{
 		height: 44.4%;
 		bottom: 0.8rem;
 	}
+
+
+
+
+
+
+
+@media screen and (min-height: 568px) {
+	.swiper-slide>.bg{
+		width: 100%;
+		height: 3.32rem;
+		top: 0;
+	}
+	.swiper-slide>.logo{
+		width: 3.8rem;
+		height: 1.2rem;
+		top: 0.65rem;
+	}
+	.swiper-slide>.num{
+		width: 0.65rem;
+		height: 1.01rem;
+		top: 3.03rem;
+	}
+	.swiper-slide>.text{
+		width: 4.84rem;
+		height: 1rem;
+		top: 4.04rem;
+	}
+	.swiper-slide>.phone{
+		width: 100%;
+		height: 5.84rem;
+		bottom: 1.2rem;
+	}
 }
-
-
-
-
-
-
-
 
 
 
