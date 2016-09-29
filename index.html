@@ -85,7 +85,18 @@
         height:h
     });
     var swiper=null;
-        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+       swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                effect: 'cube',
+                grabCursor: true,
+                cube: {
+                    shadow: true,
+                    slideShadows: true,
+                    shadowOffset: 20,
+                    shadowScale: 0.94
+                }
+            });
+        /*if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 swiper = new Swiper('.swiper-container', {
                 pagination: '.swiper-pagination',
                 paginationClickable: true,
@@ -106,7 +117,7 @@
         }
         else {
             alert(121);
-        }
+        }*/
 </script>
 
 
