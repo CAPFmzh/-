@@ -55,20 +55,23 @@ body{
 }
 .swiper-slide>.num{
 	width: 0.65rem;
-	height: 1.01rem;
-	/*top: 3.03rem;*/
+	/* height: 1.01rem; */
+	height: 7.5%;
+	/* top: 3.03rem; */
 	top: 22%;
 }
 .swiper-slide>.text{
 	width: 4.84rem;
 	height: 1rem;
-	/*top: 4.04rem;*/
+	height: 7.5%;
+	/* top: 4.04rem; */
 	top: 30%;
 	z-index: 33;
 }
 .swiper-slide>.phone{
 	width: 100%;
-	height: 5.84rem;
+	/* height: 5.84rem; */
+	height: 43.8%;
 	/* bottom: 1.2rem; */
 	/* bottom: 9%; */
 	/* top: 5.13rem; */
