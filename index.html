@@ -143,17 +143,14 @@
 				flage=false;
 				return false;
 			}
-			
-			 if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
-			     window.location.href="itms-services://?action=download-manifest&url=https://api.bestudent.cn/bestudent_tanke_assit.plist";
-				flage=false;
-			 }else if (browser.versions.android) {
-			     window.location.href="http://download.bestudent.cn/android/tanke_assit/bestudent_tanke_assit.apk";
-				 flage=false;
-			 }
 			if(flage){
 				alert("请在浏览器中打开");
 			}
+			 if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+			     window.location.href="itms-services://?action=download-manifest&url=https://api.bestudent.cn/bestudent_tanke_assit.plist";
+			 }else if (browser.versions.android) {
+			     window.location.href="http://download.bestudent.cn/android/tanke_assit/bestudent_tanke_assit.apk";flage=false;
+			 }
 			return false;
 		}
 // 		function download1(){
