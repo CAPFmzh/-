@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="btn">
-        <button id="downLoad" onclick="download1();">下载帮帮妙招</button>
+        <button id="downLoad">下载帮帮妙招</button>
     </div>
 </body>
 </html>
@@ -132,27 +132,35 @@
 	            language: (navigator.browserLanguage || navigator.language).toLowerCase()
 	    }
 		function download1(){
-			var flage=true;
 			if(browser.versions.agent.indexOf("MQQBrowser")>-1){
 				alert("请在浏览器中打开");
-				flage=false;
 				return false;
-			}
+			}}else{
+			 	alert('请在浏览器中打开');
+				return false;
+			 }
 			if(browser.versions.agent.indexOf("MicroMessenger")>-1){
 				alert("请在Safari浏览器中打开");
-				flage=false;
 				return false;
-			}
-			if(flage){
-				alert("请在浏览器中打开");
-			}
+			}}else{
+			 	alert('请在浏览器中打开');
+				return false;
+			 }
+
 			 if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
 			     window.location.href="itms-services://?action=download-manifest&url=https://api.bestudent.cn/bestudent_tanke_assit.plist";
 			 }else if (browser.versions.android) {
 			     window.location.href="http://download.bestudent.cn/android/tanke_assit/bestudent_tanke_assit.apk";flage=false;
+			 }else{
+			 	alert('请在浏览器中打开');
+				return false;
 			 }
 			return false;
 		}
+	var click=document.getElementById('downLoad');
+	click.onclick=function(){
+		download1()	
+	}
 // 		function download1(){
 // 			if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
 //                				 window.location.href="itms-services://?action=download-manifest&url=https://api.bestudent.cn/bestudent_teacher_assit.plist";
