@@ -114,7 +114,13 @@ body{
 	}
 }
 
-
+@media screen and (min-height: 480px) {
+	.swiper-slide>.phone{
+		width: 100%;
+		height: 5.84rem;
+		bottom: 1.2rem;
+	}
+}
 
 
 
