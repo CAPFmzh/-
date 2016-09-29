@@ -127,17 +127,6 @@ body{
 		bottom: 1.2rem;
 	}
 }
-@media screen and (max-height: 490px) {
-	.swiper-slide>.num{
-		display:none
-	}
-	.swiper-slide>.text{
-		width: 4.84rem;
-		height: 1rem;
-		top:3rem;
-		z-index:555
-	}
-}
 @media screen and (max-height: 480px) {
 	.swiper-slide>.text{
 		z-index:555
@@ -149,7 +138,17 @@ body{
 	}
 }
 
-
+@media screen and (max-height: 450px) {
+	.swiper-slide>.num{
+		display:none
+	}
+	.swiper-slide>.text{
+		width: 4.84rem;
+		height: 1rem;
+		top:3rem;
+		z-index:555
+	}
+}
 
 
 
