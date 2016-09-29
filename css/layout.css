@@ -17,9 +17,9 @@ body{
 }
 .btn>button{
 	width: 6.9rem;
-	height: 0.8rem;
+	height: 0.9rem;
 	display: block;
-	margin:0 auto;
+	margin: 0.15rem auto;
 	background-image: linear-gradient(-180deg, #00ACF8 0%, #0096FF 100%);
 	border-radius: 5px;
 	border: none;
@@ -50,23 +50,29 @@ body{
 .swiper-slide>.logo{
 	width: 3.8rem;
 	height: 1.2rem;
-	top: 0.65rem;
+	/*top: 0.65rem;*/
+	top: 6%;
 }
 .swiper-slide>.num{
 	width: 0.65rem;
 	height: 1.01rem;
-	top: 2.9rem;
+	/*top: 3.03rem;*/
+	top: 22%;
 }
 .swiper-slide>.text{
 	width: 4.84rem;
 	height: 1rem;
-	top: 3.9rem;
-	z-index:33;
+	/*top: 4.04rem;*/
+	top: 30%;
+	z-index: 33;
 }
 .swiper-slide>.phone{
 	width: 100%;
 	height: 5.84rem;
-	bottom: 0rem;
+	/* bottom: 1.2rem; */
+	/* bottom: 9%; */
+	/* top: 5.13rem; */
+	top: 39%;
 }
 
 /*.swiper-container {
