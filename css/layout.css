@@ -52,52 +52,47 @@ body{
 .swiper-slide{
 	width: 100%;
 }
-	.swiper-slide>.bg{
-		width: 100%;
-		height: 3.32rem;
-		top: 0;
-	}
-	.swiper-slide>.logo{
-		width: 3.8rem;
-		height: 1.2rem;
-		top: 0.65rem;
-	}
-	.swiper-slide>.num{
-		width: 0.65rem;
-		height: 1.01rem;
-		top: 3.03rem;
-	}
-/* 	.swiper-slide>.text{
-		width: 4.84rem;
-		height: 1rem;
-		top: 4.04rem;
-		z-index:555
-	} */
-	.swiper-slide>.phone{
-		width: 100%;
-		height: 5.84rem;
-		bottom: 1.2rem;
-	}
+.swiper-slide>.bg{
+	width: 100%;
+	height: 3.32rem;
+	top: 0;
+}
+.swiper-slide>.logo{
+	width: 3.8rem;
+	height: 1.2rem;
+	top: 0.65rem;
+}
+.swiper-slide>.num{
+	width: 0.65rem;
+	height: 1.01rem;
+	top: 3.03rem;
+}
+.swiper-slide>.phone{
+	width: 100%;
+	height: 5.84rem;
+	bottom: 1.2rem;
+}
 
 .swiper-slide>.text{
 	height: 0.86rem;
 	top: 4.04rem;
 }
-.swiper-slide>.t_1{
-	width:3.94rem ;
-	
+.swiper-slide>.text>h3{
+	font-size: 0.5rem;
+	color: #333;
+	line-height: 0.7rem;
+	font-weight: bold;
+	text-align: center;
+	font-family: "微软雅黑 Light";
 }
-.swiper-slide>.t_2{
-	width:3.95rem ;
-	
+.swiper-slide>.text>h3>span{
+	color: #ff9a00;
 }
-.swiper-slide>.t_3{
-	width:3.56rem ;
-	
-}
-.swiper-slide>.t_4{
-	width:4.67rem ;
-	
+.swiper-slide>.text>div{
+	text-align: center;
+	line-height: 0.3rem;
+	font-size: 0.22rem;
+	color: #999;
 }
 @media screen and (max-height: 667px) {
 	.swiper-slide>.bg{
