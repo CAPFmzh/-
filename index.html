@@ -174,9 +174,9 @@
 	
 	
 	if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-		click.onclick=function(){
+		$('#downLoad').on("touch",function(){
 			window.location.href="itms-services://?action=download-manifest&url=https://api.bestudent.cn/bestudent_teacher_assit.plist";      			
-		}
+		})
     } else if (/(Android)/i.test(navigator.userAgent)) {
 		click.onclick=function(){
 			window.location.href="http://download.bestudent.cn/android/teacher_assit/bestudent_teacher_assit.apk";
