@@ -111,7 +111,7 @@ body{
 		top: 2.8rem;
 	}
 	.swiper-slide>.text{
-		width: 4.84rem;
+		
 		height: 1rem;
 		top: 3.8rem;
 		z-index:555
@@ -150,7 +150,7 @@ body{
 		display:none
 	}
 	.swiper-slide>.text{
-		width: 4.84rem;
+		
 		height: 1rem;
 		top:3rem;
 		z-index:555
