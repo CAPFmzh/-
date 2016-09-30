@@ -119,21 +119,20 @@
      	    }
      	function download1(){
                 if(browser.versions.mobile) {
-			    alert('移动端')
+			    //alert('移动端')
 			    var ua = navigator.userAgent.toLowerCase(); //获取判断用的对象
 			    if (ua.match(/QQ/i) == "qq") {
-					alert('qq：请在浏览器打开进行下载')
+					//alert('qq：请在浏览器打开进行下载')
 					 if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
-						   alert('qq1：请在浏览器打开进行下载')
+						   alert('请在浏览器打开进行下载')
 					} else if (browser.versions.android) {
-					    alert('安卓');
 					window.location.href = "http://download.bestudent.cn/android/tanke_assit/bestudent_tanke_assit.apk";
 					flage = false;
 				    }
 				    return
 			    }
 			    if (ua.match(/MicroMessenger/i) == "micromessenger") {
-				alert('微信：请在浏览器打开进行下载');
+				alert('请在浏览器打开进行下载');
 			    }
 
 			    if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
