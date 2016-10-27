@@ -156,9 +156,39 @@
                 }
      		return false;
      	}
+	function download2(){
+                if(browser.versions.mobile) {
+                    //alert('移动端')
+                    var ua = navigator.userAgent.toLowerCase(); //获取判断用的对象
+                    if (ua.match(/QQ/i) == "qq") {
+                        //alert('qq：请在浏览器打开进行下载')
+                         if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+                               alert('请在浏览器打开进行下载')
+                        } else if (browser.versions.android) {
+                             //这个链接放android的
+                            window.location.href = "http://download.bestudent.cn/android/skyeye-app/skyeye.apk";
+                            flage = false;
+                        }
+                        return
+                    }
+                    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                        alert('请在浏览器打开进行下载');
+                    }
+
+                    if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+                        //这个链接放ios的
+                        window.location.href = "itms-services://?action=download-manifest&url=https://api.bestudent.cn/bestudent_skyeye_app.plist";
+                    } else if (browser.versions.android) {
+                        //这个链接放android的
+                        window.location.href = "http://download.bestudent.cn/android/skyeye-app/skyeye.apk";
+                        flage = false;
+                    }
+                }
+     		return false;
+     	}
      	var click=document.getElementById('downLoad');
      	click.onclick=function(){
-     		download1()
+     		download2()
      	}
 	
 	
