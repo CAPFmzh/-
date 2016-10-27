@@ -188,10 +188,15 @@
      		return false;
      	}
      	var click=document.getElementById('downLoad');
-     	click.onclick=function(){
-     		download2()
-     	}
-	
+     	
+		click.onclick=function(){
+			var ua = navigator.userAgent.toLowerCase();
+			var isWeixin = ua.indexOf('micromessenger') != -1;
+			if (isWeixin) {
+				alert('请在浏览器打开进行下载');
+			}
+			download2()
+     		}
 	
 	
 	
