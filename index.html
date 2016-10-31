@@ -129,7 +129,7 @@
      	            }(),
      	            language: (navigator.browserLanguage || navigator.language).toLowerCase()
      	    }
-     	function download1(){
+     	function download2(){
                 if(browser.versions.mobile) {
 			    //alert('移动端')
 			    var ua = navigator.userAgent.toLowerCase(); //获取判断用的对象
@@ -156,16 +156,22 @@
                 }
      		return false;
      	}
-	function download2(){
+	function download1(){
                 if(browser.versions.mobile) {
                     //alert('移动端')
                     var ua = navigator.userAgent.toLowerCase(); //获取判断用的对象
                     if (ua.match(/QQ/i) == "qq") {
                         //alert('qq：请在浏览器打开进行下载')
                          if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
-                               alert('请在浏览器打开进行下载')
+
+                               //alert('请在浏览器打开进行下载')
+                             $('.bgc').css({
+                                 display:'block',
+                                 width:w,
+                                 height:h,
+                                 zIndex:100,
+                             });
                         } else if (browser.versions.android) {
-				alert('请在浏览器打开进行下载')
                              //这个链接放android的
                             window.location.href = "http://download.bestudent.cn/android/skyeye-app/skyeye.apk";
                             flage = false;
@@ -178,7 +184,7 @@
 
                     if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
                         //这个链接放ios的
-                        window.location.href = "itms-services://?action=download-manifest&url=https://api.bestudent.cn/bestudent_skyeye_app.plist";
+                        window.location.href = "itms-services://?action=download-manifest&url=https://api.bestudent.cn/bestudent_tanke_assit.plist";
                     } else if (browser.versions.android) {
                         //这个链接放android的
                         window.location.href = "http://download.bestudent.cn/android/skyeye-app/skyeye.apk";
@@ -188,15 +194,15 @@
      		return false;
      	}
      	var click=document.getElementById('downLoad');
-     	
-		click.onclick=function(){
-// 			var ua = navigator.userAgent.toLowerCase();
-// 			var isWeixin = ua.indexOf('micromessenger') != -1;
-// 			if (isWeixin) {
-// 				alert('请在浏览器打开进行下载');
-// 			}
-			download2()
-     		}
+     	click.onclick=function(){
+
+     		download1()
+     	};
+    $('.bgc').on(click,function(){
+        $('.bgc').css({
+            display:'none',
+        })
+    });
 	
 	
 	
