@@ -57,6 +57,11 @@
     <div class="btn">
         <button id="downLoad">下载帮帮妙招</button>
     </div>
+    <div class="bgc">
+        <div class="bg_png" style="width: 5.4rem;height: 2.48rem">
+            <img src="" alt="">
+        </div>
+    </div>
 </body>
 </html>
 <script src="./js/zepto.min.js"></script>
@@ -179,7 +184,13 @@
                         return
                     }
                     if (ua.match(/MicroMessenger/i) == "micromessenger") {
-                        alert('请在浏览器打开进行下载');
+                       // alert('请在浏览器打开进行下载');
+			     $('.bgc').css({
+                                 display:'block',
+                                 width:w,
+                                 height:h,
+                                 zIndex:100,
+                             });
                     }
 
                     if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
