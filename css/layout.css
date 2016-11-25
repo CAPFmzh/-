@@ -14,6 +14,7 @@ body{
 	bottom: 0;
 	z-index: 99;
 	background: #F7F7F7;
+	display:none;
 
 }
 .btn>button{
